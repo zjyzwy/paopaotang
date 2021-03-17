@@ -33,7 +33,7 @@ public class GameJFrame extends JFrame{
 	}
 	public void init(){
 		this.setSize(GameX, GameY);//设置窗体大小
-		this.setTitle("测试游戏");
+		this.setTitle("泡泡堂");
 		this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);//设置关闭退出
 		this.setLocationRelativeTo(null);//屏幕居中显示
 	}

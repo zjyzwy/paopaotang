@@ -42,7 +42,7 @@ public class GameLoad {
 	public static void MapLoad(int mapId){
 		GameLoad.loadObj();
 //		得到文件路径
-		String mapName="com/tedu/text/"+mapId+".map";
+		String mapName="com/scnu/text/"+mapId+".map";
 //		使用io流来获取文件对象
 		ClassLoader classLoader = GameLoad.class.getClassLoader();
 		InputStream maps=classLoader.getResourceAsStream(mapName);
@@ -94,7 +94,7 @@ public class GameLoad {
 	 * 加载图片 代码和图片之间差一个路径问题
 	 */
 	public static void loadImg(){//可以带参数，因为不同的关卡有不同的图片
-		String texturl="com/tedu/text/GameData.pro";//文件命名可以更有规律
+		String texturl="com/scnu/text/GameData.pro";//文件命名可以更有规律
 		ClassLoader classLoader=GameLoad.class.getClassLoader();
 		InputStream texts=classLoader.getResourceAsStream(texturl);
 //		imgMap用于存放数据
@@ -153,7 +153,7 @@ public class GameLoad {
 	 */
 	private static Map<String,Class<?>> objMap=new HashMap<>();
 	public static void loadObj(){
-		String texturl="com/tedu/text/obj.pro";//文件命名可以更有规律
+		String texturl="com/scnu/text/obj.pro";//文件命名可以更有规律
 		ClassLoader classLoader=GameLoad.class.getClassLoader();
 		InputStream texts=classLoader.getResourceAsStream(texturl);
 		pro.clear();
